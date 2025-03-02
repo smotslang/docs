@@ -11,7 +11,9 @@
     Sets a jump marker with value equal to the provided number.
 ## spring
     Moves the program execution pointer to the jump marker with the value equal to the provided number.
+    Does nothing instead if the current memory value is 0.
 ## spike
+    Does nothing unless the current memory value is 0.
     Skips all instructions until the jump instruction with the value equal to the provided number.
 ## spinner
     Built-in rng keyword. Has a 1/3 chance to set the current memory value to 1; otherwise sets it to 0.
