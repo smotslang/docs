@@ -3,6 +3,10 @@
     Increments the current memory location by 1.
 ## fall
     Decrements the current memory location by 1.
+## run
+    Outputs the current memory value.
+## retry
+    Same as run, but doesn't print a newline afterwards.
 ## wind
     Takes an address, copies the value from the current memory location to the provided location.
 ## dash
@@ -17,6 +21,8 @@
     Skips all instructions until the jump instruction with the value equal to the provided number.
 ## spinner
     Built-in rng keyword. Has a 1/3 chance to set the current memory value to 1; otherwise sets it to 0.
+## smots5
+    Terminates the program.
 
 # Numbers
     Any of these can be used interchangeably with all keywords that take an argument.
@@ -26,3 +32,12 @@
     $number refers to the value stored at the memory address number.
 ## user input with @madeline
     @madeline prompts the user for input, and has the value of the number they input.
+## file input with @tas
+    @tas gets the nth byte of a file where n is the current memory value.
+    Example: climb crumble @tas C:\Users\Admin\Downloads\smotslang\examples\meow.txt stores the second byte of meow.txt to memory.
+## @recordcount
+    Like @tas but gets the number of bytes in a file
+
+# Comments
+    Denoted by wrapping the comment in --
+    Example: -- smots gaming --  (Including the spaces is important!)
