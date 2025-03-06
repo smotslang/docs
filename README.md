@@ -32,12 +32,18 @@
     $number refers to the value stored at the memory address number.
 ## user input with @madeline
     @madeline prompts the user for input, and has the value of the number they input.
-## file input with @tas
-    @tas gets the nth byte of a file where n is the current memory value.
-    Example: climb crumble @tas C:\Users\Admin\Downloads\smotslang\examples\meow.txt stores the second byte of meow.txt to memory.
-## @recordcount
-    Like @tas but gets the number of bytes in a file
 
+# File System
+Smotslang has a special memory slot for holding file paths, to set this slot use the state keyword.\
+`state C:\Users\Admin\Downloads\smotslang\examples\meow.txt` loads meow.txt into memory.
+> [!NOTE]
+> The defualt value of the file memory is smotslang's index.js, so be careful!
+# Reading Files
+To read from the open file, use @tas.\
+`@tas` gets the nth byte of a file where n is the current memory value.\
+`climb crumble @tas` stores the second byte of meow.txt to memory.\
+<br/>
+To get the length of the file use `@recordcount`
 # Comments
     Denoted by wrapping the comment in --
     Example: -- smots gaming --  (Including the spaces is important!)
