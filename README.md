@@ -23,6 +23,10 @@
     Built-in rng keyword. Has a 1/3 chance to set the current memory value to 1; otherwise sets it to 0.
 ## smots5
     Terminates the program.
+## triggerspike
+    if the current memory value is equal to the given number, skips all instructions until the given jump marker
+## trigspike
+    same as triggerspike; if the current memory value is equal to the given number, skips all instructions until the given jump marker
 
 # Numbers
     Any of these can be used interchangeably with all keywords that take an argument.
@@ -37,7 +41,7 @@
 Smotslang has a special memory slot for holding file paths, to set this slot use the state keyword.\
 `state C:\Users\Admin\Downloads\smotslang\examples\meow.txt` loads meow.txt into memory.
 > [!NOTE]
-> The defualt value of the file memory is smotslang's index.js, so be careful!
+> The default value of the file memory is smotslang's index.js, so be careful!
 # Reading Files
 To read from the open file, use @tas.\
 `@tas` gets the nth byte of a file where n is the current memory value.\
