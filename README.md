@@ -24,9 +24,9 @@
 ## smots5
     Terminates the program.
 ## triggerspike
-    if the current memory value is equal to the given number, skips all instructions until the given jump marker
+    if the current memory value is equal to the given number, do nothing, else skips all instructions until the given jump marker
 ## trigspike
-    same as triggerspike; if the current memory value is equal to the given number, skips all instructions until the given jump marker
+    same as triggerspike; if the current memory value is equal to the given number, do nothing, else skips all instructions until the given jump marker
 
 # Numbers
     Any of these can be used interchangeably with all keywords that take an argument.
