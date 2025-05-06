@@ -24,9 +24,11 @@
 ## smots5
     Terminates the program.
 ## triggerspike
-    if the current memory value is equal to the given number, do nothing, else skips all instructions until the given jump marker
+    If the current memory value is equal to the given number, do nothing, else skips all instructions until the given jump marker
 ## trigspike
-    same as triggerspike; if the current memory value is equal to the given number, do nothing, else skips all instructions until the given jump marker
+    Same as triggerspike; if the current memory value is equal to the given number, do nothing, else skips all instructions until the given jump marker
+## campaign
+    Takes an agrument of a path to a smotslang file and runs it.
 
 # Numbers
     Any of these can be used interchangeably with all keywords that take an argument.
@@ -36,10 +38,17 @@
     $number refers to the value stored at the memory address number.
 ## user input with @madeline
     @madeline prompts the user for input, and has the value of the number they input.
+## numbers
+    Smotsinary can be hard to work with, so if you put a `^` before a base 10 number, it converts it to smotsinary for you!
+## chars
+    Like numbers but if you put a `'` before a character to convert it into smotsinary.
+> [!NOTE]
+> You can't use this method to get characters like spaces however!
 
 # File System
 Smotslang has a special memory slot for holding file paths, to set this slot use the state keyword.\
 `state C:\Users\Admin\Downloads\smotslang\examples\meow.txt` loads meow.txt into memory.
+You can also use the `badeline` keyword to open a file prompt, setting the current file to the selection.
 > [!NOTE]
 > The default value of the file memory is smotslang's index.js, so be careful!
 # Reading Files
