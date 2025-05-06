@@ -29,6 +29,10 @@
     Same as triggerspike; if the current memory value is equal to the given number, do nothing, else skips all instructions until the given jump marker
 ## campaign
     Takes an agrument of a path to a smotslang file and runs it.
+## debug
+    Sets the program to output numbers
+## reload
+    Sets the program to output characters
 
 # Numbers
     Any of these can be used interchangeably with all keywords that take an argument.
