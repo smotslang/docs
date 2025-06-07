@@ -3,6 +3,8 @@
     Increments the current memory location by 1.
 ## fall
     Decrements the current memory location by 1.
+## crumble
+    Sets the current memory location to a given number.
 ## run
     Outputs the current memory value.
 ## retry
@@ -26,7 +28,7 @@
 ## triggerspike
     If the current memory value is equal to the given number, do nothing, else skips all instructions until the given jump marker
 ## trigspike
-    Same as triggerspike; if the current memory value is equal to the given number, do nothing, else skips all instructions until the given jump marker
+    Alias for triggerspike.
 ## campaign
     Takes an agrument of a path to a smotslang file and runs it.
 ## debug
